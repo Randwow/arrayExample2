@@ -26,7 +26,7 @@ package arrayExample2;
 //}
 
 public class array{
-	public static void main(String[] args) {
+	public static void main(String[] args) { //Сортировка методом вставки 
 		int j, number; // Инициализация перменных, которые нужны для сортировки 
 		int size = 15; // Размер массива 
   		int []array = new int[size]; //Инициализация массива 
