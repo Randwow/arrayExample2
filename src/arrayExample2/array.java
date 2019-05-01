@@ -47,6 +47,25 @@ public class array{
 		}
 		System.out.println("\nНовый отсортированный массив: ");
 		for(int i = 0 ; i < array.length; i++)System.out.print(array[i] + " "); //вывод на экрна нового массива, который отсоритрован 
+		System.out.println();
+		int suma = 0,dif = 0,max = 0,min = 0;
+		for (int i = 0; i<array.length; i++) {
+			suma += array[i];
+			dif -= array[i] ;
+			max = array[0];
+			min = array[0];
+			if (array[i] > max) { 
+			max = array[i];
+			}
+			if (array[i] < min) { 
+			min = array[i];
+			}
+		}
+		System.out.println("Сумма число соритрованного массива:=" + suma);
+		System.out.println("Разность число соритрованного массива:=" + dif);
+		System.out.println("Максимальное число соритрованного массива:=" + max);
+		System.out.println("Минемальное число соритрованного массива:=" + min);
+		
 	}
 }
 	
