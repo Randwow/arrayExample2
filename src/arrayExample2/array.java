@@ -37,7 +37,7 @@ public class array{
 		}
 	
 		for(int i = 0; i < array.length; i++) {// Инициализация счётчика, который прогбигается по массиву 
-			number = array[i]; // Промежуточное парметр присваевает себе число массива самое первое 
+			number = array[i];// Промежуточное парметр присваевает себе число массива самое первое 
 			for(j = i - 1 ; j >= 0 && array[j] > number; j--) { 
 // Инициализация цикла соритровки , где новый счётчик имеет значение больше или равно 0 
 //и его значение должно быть больше, значения, которое принял параметр от массива( сравнение элементов с индексом первым и последующим) 
@@ -48,23 +48,24 @@ public class array{
 		System.out.println("\nНовый отсортированный массив: ");
 		for(int i = 0 ; i < array.length; i++)System.out.print(array[i] + " "); //вывод на экрна нового массива, который отсоритрован 
 		System.out.println();
-		int suma = 0,dif = 0,max = 0,min = 0;
+		int suma = 0,dif = 0, min = 0;
 		for (int i = 0; i<array.length; i++) {
 			suma += array[i];
-			dif -= array[i] ;
-			max = array[0];
-			min = array[0];
-			if (array[i] > max) { 
-			max = array[i];
-			}
+			dif -= array[i];
 			if (array[i] < min) { 
 			min = array[i];
 			}
 		}
+		for( int i = 12; i < array.length; i++) {
+			System.out.print(array[i] + " ");
+		}
+		System.out.print("\n");
 		System.out.println("Сумма число соритрованного массива:=" + suma);
 		System.out.println("Разность число соритрованного массива:=" + dif);
-		System.out.println("Максимальное число соритрованного массива:=" + max);
-		System.out.println("Минемальное число соритрованного массива:=" + min);
+		System.out.println("Максимальное первое число соритрованного массива:=" + array[14]);
+		System.out.println("Максимальное второе число соритрованного массива:=" + array[13]);
+		System.out.println("Максимальное третие число соритрованного массива:=" + array[12]);
+		System.out.println("Минимальное число соритрованного массива:=" + min);
 		
 	}
 }
