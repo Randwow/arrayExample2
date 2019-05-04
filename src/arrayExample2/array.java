@@ -48,17 +48,25 @@ public class array{
 		System.out.println("\nНовый отсортированный массив: ");
 		for(int i = 0 ; i < array.length; i++)System.out.print(array[i] + " "); //вывод на экрна нового массива, который отсоритрован 
 		System.out.println();
-		int suma = 0,dif = 0, min = 0;
-		for (int i = 0; i<array.length; i++) {
+		int suma = 0,dif = 0, min = array[0], max = array[0];
+		for (int i = 0; i < array.length; i++) {
 			suma += array[i];
 			dif -= array[i];
 			if (array[i] < min) { 
 			min = array[i];
 			}
+			if (array[i] > max) { 
+			max = array[i];
+			}
 		}
 		for( int i = 12; i < array.length; i++) {
 			System.out.print(array[i] + " ");
 		}
+		System.out.println();
+		System.out.println("Значения отсортированного массива, больше первого числа и меньше последнего");
+		for(int i = 1; i < array.length - 1; i++ ) {
+			System.out.print(" " + array[i] + " ");
+			}
 		System.out.print("\n");
 		System.out.println("Сумма число соритрованного массива:=" + suma);
 		System.out.println("Разность число соритрованного массива:=" + dif);
